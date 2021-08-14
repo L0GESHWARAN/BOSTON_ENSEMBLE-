@@ -5,7 +5,7 @@ import pandas
 import pickle
 
 app = Flask(__name__)
-@app.route('/',methods=['Get'])
+@app.route('/',methods=['GET'])
 @cross_origin()
 def index():
     return render_template('index.html')
